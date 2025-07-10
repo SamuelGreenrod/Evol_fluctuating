@@ -283,9 +283,9 @@ ggplot(phage_fitness_pfu_update_boxplots_normalised, aes(line, PFU_relative, col
     "Competition" = "grey10"
   )) +
   ylab("Phage growth rel. to ancestor") +
-  xlab("Evolved line")+
-  labs(colour="Evolved line")+
-  scale_y_continuous(trans='log10', limits = c(0.01,5*10^5)) +
+  xlab("Evolution treatment")+
+  labs(colour="Evolution treatment")+
+  scale_y_continuous(trans='log10', limits = c(0.1,5*10^4)) +
   annotation_logticks(sides="l")+
   geom_hline(yintercept = 1, linetype = "dashed", color = "#4DAF4A")+
   geom_rect(data = ancestor_se,
